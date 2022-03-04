@@ -6,7 +6,6 @@ import styles from './styles.module.scss';
 
 export const SignInButton = () => {
   const { data: session } = useSession();
-
   return session ? (
     <button
       onClick={() => signOut()}
